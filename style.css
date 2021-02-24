@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .profile {
     width: 175px;
     margin-bottom: 50px;
@@ -18,12 +22,12 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    background: cyan;
+    background-image:linear-gradient(red, yellow);
     opacity: 0.83;
     display: table;
     width: 100%;
     height: 100%;
-    z-index: 9 
+    z-index: 9
 }
 
 h1 {
@@ -94,7 +98,7 @@ p {
 }
 
 .links:hover {
-    background-color: aqua;
+    background-color: cadetblue;
 }
 
 a {
@@ -107,4 +111,29 @@ a {
 
 #grad {
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: cyan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: cyan
+}
+
+.button:active {
+    background-color: cyan;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
